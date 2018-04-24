@@ -1,3 +1,4 @@
+// public/js/directives/minhas-diretivas.js
 angular.module('minhasDiretivas', []).directive('meuPainel', function(){
 	
 	var ddo = [];
@@ -9,6 +10,9 @@ angular.module('minhasDiretivas', []).directive('meuPainel', function(){
 		titulo: '@'
 	};
 	
+	ddo.templateUrl = 'js/directives/meu-painel.html';
+	
+	/*
     ddo.template = 
                 '<div class="panel panel-default">'
             +   '   <div class="panel-heading">'
@@ -17,6 +21,7 @@ angular.module('minhasDiretivas', []).directive('meuPainel', function(){
             +   '   <div class="panel-body" ng-transclude>'
             +   '   </div>'
             +   '</div>';	
+	*/
 	
 	return ddo;	
 });
