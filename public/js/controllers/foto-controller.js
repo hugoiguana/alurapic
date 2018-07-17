@@ -1,13 +1,7 @@
 // public/js/controllers/foto-controller.js
 angular.module('alurapic')
-	.controller('FotoController', function($scope, $resource, $routeParams) {
-	
-        var recursoFoto = $resource('/v1/fotos/:fotoId', null, {
-            'update' : { 
-                method: 'PUT'
-            }
-        });
-		
+	.controller('FotoController', function($scope, recursoFoto, $routeParams) {
+
         $scope.foto = {};
         $scope.mensagem = '';
 
